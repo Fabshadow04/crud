@@ -1,7 +1,7 @@
 @extends('layouts.plantillabase');
 
 @section('contenido')
-<a href="articulo/create" class="btn btn-primary">Crear </a>
+<a href="articulos/create" class="btn btn-primary">Crear </a>
 
 <table class="table table-dark table-striped mt-4">
   <thead>
