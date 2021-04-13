@@ -101,6 +101,9 @@ class ArticuloController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // se busca el id, despues se elimina y por ultimo se redirige
+        $articulo=Articulo::find($id);
+        $articulo->delete();
+        return redirect('/articulos');
     }
 }
