@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Articulo;
 
 class ArticuloController extends Controller
 {
@@ -13,7 +14,10 @@ class ArticuloController extends Controller
      */
     public function index()
     {
+       $articulos= Articulo::all(); //primero se mete el nombre del modelo y despues viene el metodo 
+                        //este metodo trae todos los datos
         //
+        return view('articulo.index')->with('articulos',$articulos);
     }
 
     /**
